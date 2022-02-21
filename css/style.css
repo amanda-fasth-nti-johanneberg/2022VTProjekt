@@ -1,1 +1,75 @@
-/* Denna fil skall innehålla din CSS kod */
+#wrapper {
+    display: grid;
+    width: 90vw;
+    min-height: 120vh;
+    margin: auto;
+    grid-template-areas: 
+    'hd hd hd'
+    'sc1 sc2 sc3'
+    'ft ft ft';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15% auto 10%;
+}
+@media screen and (min-width: 768px) {
+    header {
+        display: grid;
+        grid-area: hd;
+        background-color: aqua;
+    }
+    
+    #sec1 {
+        display: grid;
+        grid-area: sc1;
+        background-color: aquamarine;
+    }
+    #sec2 {
+        display: grid;
+        grid-area: sc2;
+        background-color: brown;
+    }
+    #sec3 {
+        display: grid;
+        grid-area: sc3;
+        background-color: darkcyan;
+    }
+    
+    footer {
+        display: grid;
+        grid-area: ft;
+        background-color: crimson;
+    }  
+}
+
+
+
+
+
+
+
+header {
+    display: grid;
+    grid-area: hd;
+    background-color: aqua;
+}
+
+#sec1 {
+    display: grid;
+    grid-area: sc1;
+    background-color: aquamarine;
+}
+#sec2 {
+    display: grid;
+    grid-area: sc2;
+    background-color: brown;
+}
+#sec3 {
+    display: grid;
+    grid-area: sc3;
+    background-color: darkcyan;
+}
+
+footer {
+    display: grid;
+    grid-area: ft;
+    background-color: crimson;
+}
