@@ -1,5 +1,6 @@
 body {
     background-color: rgb(20, 20, 22);
+    font-family: "PT Sans";
 }
 
     #wrapper {
@@ -9,10 +10,11 @@ body {
         margin: auto;
         grid-template-areas: 
         'hd hd hd'
+        'nv nv nv'
         'sc1 sc2 sc3'
         'ft ft ft';
         grid-template-columns: 1fr 1fr 0.5fr;
-        grid-template-rows: 15% auto 7%;
+        grid-template-rows: 10% 5% auto 7%;
     }
 
     header {
@@ -20,34 +22,65 @@ body {
         grid-area: hd;
         background-color: rgb(20, 20, 22);
     }
-
+    
     #logga {
         display: grid;
         width: 13rem;
         margin: auto;
-        margin-bottom: 70rem;
     }
-    
+
+    nav {
+        display: grid;
+        grid-area: nv;
+        background-color: rgb(20, 20, 22);
+    }
+
+    nav ul{
+        list-style-type: none;
+        margin: auto;
+        padding-right: 28px;
+    }
+
+    nav ul a{
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        color: rgb(15, 194, 192);
+        transition: 0.3s ease-in;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    nav ul a:hover{
+        background-color: rgb(194, 15, 99);
+        color: white;
+        border-radius: 25px;
+    }
+
     #sec1 {
         display: grid;
         grid-area: sc1;
-        background-color: aquamarine;
+        background-color: rgb(20, 20, 22);
+        border: solid 5px rgb(245, 245, 245);
     }
     #sec2 {
         display: grid;
         grid-area: sc2;
-        background-color: brown;
+        background-color: rgb(20, 20, 22);
+        border: solid 5px rgb(245, 245, 245);
     }
     #sec3 {
         display: grid;
         grid-area: sc3;
-        background-color: darkcyan;
+        background-color: rgb(20, 20, 22);
+        border: solid 5px rgb(245, 245, 245);
     }
     
     footer {
         display: grid;
         grid-area: ft;
-        background-color: crimson;
+        background-color: rgb(20, 20, 22);
+        border: solid 5px rgb(245, 245, 245);
     }  
 
 
