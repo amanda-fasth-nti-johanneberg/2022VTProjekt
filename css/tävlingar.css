@@ -73,64 +73,44 @@ body {
         padding-left: 20px;
     }
 
+    #sec2 h1 {
+        color: rgb(245, 245, 245);
+        padding-left: 20px;
+    }
+
+    #sec2 b {
+        color: rgb(245, 245, 245);
+        padding-left: 20px;
+    }
+
     #sec2 {
         grid-area: sc2;
         background-color: rgb(20, 20, 22);
         border: solid 5px rgb(245, 245, 245);
     }
+
     #sec3 {
         grid-area: sc3;
         background-color: rgb(20, 20, 22);
         border: solid 5px rgb(245, 245, 245);
     }
+
+    #sec3 h1 {
+        color: rgb(245, 245, 245);
+        padding-left: 15px;
+    }
+    
     
     footer {
         grid-area: ft;
         background-color: rgb(20, 20, 22);
         border: solid 5px rgb(245, 245, 245);
+        padding-top: 20px;
     }  
 
+    footer b{
+        color: rgb(245, 245, 245);
+        margin-left: 30px;
+    }
 
-@media screen and (max-width: 767px) {
-    #wrapper {
-        display: grid;
-        width: 80vw;
-        min-height: 150vh;
-        margin: auto;
-        grid-template-areas: 
-        'hd hd hd'
-        'sc1 sc3 sc2'
-        'ft ft ft';
-        grid-template-columns: 1fr 1fr 0.5fr;
-        grid-template-rows: 15% auto 7%;
-    }
-    
-    header {
-        display: grid;
-        grid-area: hd;
-        background-color: aqua;
-    }
-    
-    #sec1 {
-        display: grid;
-        grid-area: sc1;
-        background-color: aquamarine;
-    }
-    #sec2 {
-        display: grid;
-        grid-area: sc2;
-        background-color: brown;
-    }
-    #sec3 {
-        display: grid;
-        grid-area: sc3;
-        background-color: darkcyan;
-    }
-    
-    footer {
-        display: grid;
-        grid-area: ft;
-        background-color: crimson;
-    }  
-}
 
