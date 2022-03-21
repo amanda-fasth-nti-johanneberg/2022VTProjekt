@@ -14,7 +14,7 @@ body {
         'sc1 sc2 sc3'
         'ft ft ft';
         grid-template-columns: 1fr 1fr 0.5fr;
-        grid-template-rows: 10% 5% auto 7%;
+        grid-template-rows: 7rem 3.5rem auto 4rem;
     }
 
     #wrapper2 {
@@ -28,7 +28,7 @@ body {
         'sc1 sc3'
         'ft ft';
         grid-template-columns: 2fr 0.5fr;
-        grid-template-rows: 10% 5% auto 7%;
+        grid-template-rows: 7rem 3.5rem auto 4rem;
     }
 
     #wrapper3 {
@@ -40,10 +40,9 @@ body {
         'hd hd hd hd'
         'nv nv nv nv'
         'sc1 sc2 sc4 sc3'
-        'sc1 sc2 sc4 sc3'
         'ft ft ft ft';
         grid-template-columns: 0.8fr 0.6fr 0.6fr 0.5fr;
-        grid-template-rows: 10% 5% 30% auto 7%;
+        grid-template-rows: 7rem 3.5rem auto 4rem;
     }
 
     #wrapper4 {
@@ -57,7 +56,7 @@ body {
         'sc1 sc2 sc3'
         'ft ft ft';
         grid-template-columns: 1fr 1fr 0.5fr;
-        grid-template-rows: 10% 5% auto 7%;
+        grid-template-rows: 7rem 3.5rem auto 4rem;
     }
 
     header {
@@ -76,10 +75,6 @@ body {
         display: grid;
         grid-area: nv;
         background-color: rgb(20, 20, 22);
-    }
-
-    #meny2 {
-        grid-area: none;
     }
 
     nav ul{
@@ -107,7 +102,7 @@ body {
     #sec1 {
         grid-area: sc1;
         background-color: rgb(20, 20, 22);
-        border: solid 5px rgb(245, 245, 245);
+        border: solid 4px rgb(245, 245, 245);
     }
 
     #sec1 h1 {
@@ -124,7 +119,7 @@ body {
         display: grid;
         grid-area: sc2;
         background-color: rgb(20, 20, 22);
-        border: solid 5px rgb(245, 245, 245);
+        border: solid 4px rgb(245, 245, 245);
         grid-template-areas:
         's2a1'
         's2a2';
@@ -157,7 +152,7 @@ body {
     #sec2hem {
         grid-area: sc2;
         background-color: rgb(20, 20, 22);
-        border: solid 5px rgb(245, 245, 245);
+        border: solid 4px rgb(245, 245, 245);
     }
 
     #sec2hem h1 {
@@ -174,7 +169,7 @@ body {
         display: grid;
         grid-area: sc4;
         background-color: rgb(20, 20, 22);
-        border: solid 5px rgb(245, 245, 245);
+        border: solid 4px rgb(245, 245, 245);
         grid-template-areas:
         's4a1'
         's4a2';
@@ -194,7 +189,7 @@ body {
     #sec3 {
         grid-area: sc3;
         background-color: rgb(20, 20, 22);
-        border: solid 5px rgb(245, 245, 245);
+        border: solid 4px rgb(245, 245, 245);
     }
 
     #sec3 h1 {
@@ -205,7 +200,7 @@ body {
     footer {
         grid-area: ft;
         background-color: rgb(20, 20, 22);
-        border: solid 5px rgb(245, 245, 245);
+        border: solid 4px rgb(245, 245, 245);
         padding-top: 20px;
     }  
 
@@ -219,7 +214,23 @@ body {
     #wrapper4 {
         display: grid;
         width: 90vw;
-        min-height: 150vh;
+        min-height: 200vh;
+        margin: auto;
+        grid-template-areas: 
+        'hd'
+        'nv'
+        'sc1'
+        'sc2'
+        'sc3'
+        'ft';
+        grid-template-columns: 2.5fr;
+        grid-template-rows: 7% 5% 30% 30% auto 7%;
+    }
+
+    #wrapper {
+        display: grid;
+        width: 90vw;
+        min-height: 200vh;
         margin: auto;
         grid-template-areas: 
         'hd'
@@ -277,3 +288,4 @@ body {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
+
