@@ -71,17 +71,10 @@ body {
         margin: auto;
     }
 
-    #teambild{
-        height: 20rem;
+    #skate{
+        height: 30rem;
         margin-left: auto;
         margin-right: auto;
-        display: block;
-    }
-    #teambild2{
-        height: 20rem;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
         display: block;
     }
 
@@ -261,7 +254,7 @@ body {
         'sc3'
         'ft';
         grid-template-columns: 2.5fr;
-        grid-template-rows: 7rem 5rem 45rem 60rem 17rem 7rem;
+        grid-template-rows: 7rem 5rem 40rem 60rem 17rem 7rem;
     }
 
     #wrapper {
@@ -370,17 +363,10 @@ body {
 
     }
 
-    #teambild{
-        height: 15rem;
+    #skate{
+        height: 25rem;
         margin-left: auto;
         margin-right: auto;
-        display: block;
-    }
-    #teambild2{
-        height: 15rem;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
         display: block;
     }
 }
